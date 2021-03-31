@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JavaScript Projects/JavaScript/JavaScript_1.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+<!--Favorite animal portion-->
+    <h1>What is your favorite animal?</h1>
+    <h3>Pick your favorite animal from this list:</h3>
+    <ul>
+        <li>Lion</li>
+        <li>Tiger</li>
+        <li>Bear</li>
+        <li>Wolf</li>
+        <li>Alligator</li>
+    </ul>
+    <h3>Enter your choice below:</h3>
+
+    <input id="animal_input" type="text">
+    <button onclick="animal_Function()">Submit</button>
+    <p id="output"></p>
+<!--End Favorite animal portion-->
+
+<!--Get elements by class name-->
+<h3 class="element">This is a bunch of text</h3>
+<h4 class="element">This is another bunch of text.</h4>
+<button onclick="test_Function()">Click me!</button>
+
+<!--End get elements by class name-->
+
+<!--Canvas Element -->
+<div>
+    <p>Here is my canvas:</p>
+    <canvas id="first_canvas" width="500" height="250" style="border: 5px double black;"></canvas>
+    <br>
+    <button onclick="myCanvas()">Click here!</button>
+</div>
+
+<!--End Canvas Element-->
+
+<!--Another canvas with a gradient-->
+<div>
+    <p>And here is another canvas:</p>
+    <canvas id="second_canvas" width="500" height="250" style="border: 5px double black;"></canvas>
+    <br>
+    <button onclick="mySecondCanvas()">Click here!</button>
+</div>
+<!--The end of another canvas with a gradient-->
+
+<img id="bear" src="../JavaScript Projects/JavaScript/scarybear.jpg" alt="Bear Picture" width="500" height="250" style="visibility: hidden;">
+</body>
+</html>

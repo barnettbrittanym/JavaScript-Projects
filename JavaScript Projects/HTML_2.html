@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <script src="JavaScript_2.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <form action="submit" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <h1>Contact information:</h1>
+            <h3>Please complete all information.</h3>
+            <label for="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="First Name">
+            <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Last Name">
+            <label for="stradd">Street Address:</label>
+                <input type="text" name="stradd" placeholder="Street Address">
+            <label for="city">City:</label>
+                <input type="text" name="city" placeholder="City">
+            <label for="state">State:</label>
+                <input type="text" name="state" placeholder="State">
+            <label for="zipcode">Zip Code:</label>
+                <input type="text" name="zipcode" placeholder="Zip Code">
+            <label for="phnum">Phone Number:</label>
+                <input type="text" name="phnum" placeholder="Phone number">
+            <label for="eml">Email Address:</label>
+                <input type="text" name="eml" placeholder="Email address">
+                <input type="submit" name="submit" id="submit">
+    </form>
+    </div>
+</body>
+</html>
