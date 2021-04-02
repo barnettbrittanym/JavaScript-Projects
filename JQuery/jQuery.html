@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>This is a bunch of text in my document!</p>
+    <p>And you can click anywhere in this document</p>
+
+    <p id="boom">And then... (click here)</p>
+
+    <h2 id="thereitis">There you have it!</h2>
+
+    <script>
+        //This is using document object properties and methods
+        document.addEventListener("click", function(){
+            document.getElementById("boom").innerHTML = "BAM!"
+        })
+    </script>
+<script>
+//Using jQuery
+    $(document).ready(function(){
+        $("html").append(
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"})
+        $("#3").click(function(){
+            $('h1').hide().fade();
+        });
+    });
+
+//jQuery Event Challenge
+$("#thereitis").click(function(){
+    console.log("You clicked an h2!")
+})
+
+//jQuery Effects 
+$("p").fadeOut(1500);
+$("p").fadeIn(750);
+
+</script>
+</body>
+</html>
